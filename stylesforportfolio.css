@@ -1211,8 +1211,12 @@ textarea.input{
         margin-left: --var(--mb-1);
         margin-right: var(--mb-1);
     }
+    .home__data{
+        text-align: center;
+        
+    }
     .home__img{
-        width: 200px;
+        width: 100px;
 
     }
     .home__title{

@@ -205,9 +205,9 @@ button, input {
     left:0;
     right: 0;
     text-align: center;
-    
-
-
+    }
+.social__share:hover{
+    color: var(--skin-color);
 }
 
 .social__share {

@@ -135,3 +135,19 @@ function navHighlighter()
         }   
     })
 }
+
+
+/*for share */
+document.querySelector('.social__share').addEventListener('click', () => {
+    if (navigator.share) {
+        navigator.share({
+            title: 'Your Page Title',
+            text: 'Check out this amazing website!',
+            url: window.location.href,
+        })
+        .then(() => console.log('Shared successfully!'))
+        .catch(error => console.error('Error sharing:', error));
+    } else {
+        alert('Share not supported on this browser.');
+    }
+});

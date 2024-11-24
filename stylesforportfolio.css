@@ -266,7 +266,7 @@ button, input {
 
 /*===== Home Section =====*/
 .home {
-   background: url('C:/Users/samba/OneDrive/Desktop/myportfolio/samba portfolio website/assets/img/forhome.png');
+  /* background: url('C:/Users/samba/OneDrive/Desktop/myportfolio/samba portfolio website/assets/img/forhome.png'); */
    background-size: 300px auto;
    background-position: center center;
    height: 100vh;
@@ -629,6 +629,9 @@ margin-bottom: var(--mb-0-5);
     display: none;
 }
 .work__img{
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
     border-radius: .5rem;
     margin-bottom: var(--mb-1);
 }
@@ -1177,15 +1180,10 @@ textarea.input{
         row-gap: 2rem;
     }
     .home__img{
-        display: block;
-        width: 250px;
-        justify-self: center;
+        display: none;
     }
     .home__social{
-        left: initial;
-        right: -1rem;
-        flex-direction: column;
-        row-gap: 3.5rem;
+        display: none;
     }
     .my__info{
         display: none;
@@ -1209,6 +1207,18 @@ textarea.input{
     }
     .about__description{
         padding: 0;
+    }
+    .button {
+        width: 60%; 
+        margin: 0.5rem 0; 
+        text-align: center; 
+    }
+    
+    .about__buttons {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 0.5rem; 
     }
     .contact__container,
     .work__container{
@@ -1248,6 +1258,7 @@ textarea.input{
         grid-template-columns: repeat(2, 1fr);
         row-gap: .5rem;
     }
+    
     .work__container,
     .skills__container,
     .contact__container,
@@ -1262,5 +1273,4 @@ textarea.input{
         column-gap: .25rem;
     }
 }
-
 
